@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-1-bg-1: hsl(252, 100%, 67%);
+    --card-1-bg-2: hsl(241, 81%, 54%);
+    --score-circle-bg-1: hsla(256, 72%, 46%, 1);
+    --score-circle-bg-2: hsla(241, 72%, 46%, 0);
+    --body-bg: #e6ecf9;
+    --white: hsl(0, 0%, 100%);
+    --card-1-alt: hsl(241, 100%, 89%);
+    --reaction: hsl(0, 100%, 67%);
+    --reaction-bg: hsla(0, 100%, 67%, 0.06);
+    --memory: hsl(39, 100%, 56%);
+    --memory-bg: hsla(39, 100%, 56%, 0.06);
+    --verbal: hsl(166, 100%, 37%);
+    --verbal-bg: hsla(166, 100%, 37%, 0.06);
+    --visual: hsl(234, 85%, 45%);
+    --visual-bg: hsla(234, 85%, 45%, 0.06);
+    --cta-btn: hsl(224, 30%, 27%);
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 45%;
+    border-radius: 20px;
+}
+
+.flex-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.card-1 {
+    background: linear-gradient(to bottom, var(--card-1-bg-1), var(--card-1-bg-2));
+    border-radius: 20px 20px 20px 20px;
+}
+
+.card-1 .title {
+    color: var(--card-1-alt);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+#result {
+    background: linear-gradient(to bottom, var(--score-circle-bg-1), var(--score-circle-bg-2));
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    gap: 0;
+}
+
+.result {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.total {
+    color: var(--card-1-alt);
+    font-size: small;
+    font-weight: 500;
+}
+
+.card-1 h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+.description {
+    color: var(--card-1-alt);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-2 {
+    background-color: var(--white);
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card-2 .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: var(--cta-btn);
+    text-align: left;
+}
+
