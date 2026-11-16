@@ -108,17 +108,58 @@ body {
 .card-2 {
     background-color: var(--white);
     border-radius: 0 20px 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     
 }
 
 .card-2 .title {
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 1rem 0;
     color: var(--cta-btn);
-    text-align: left;
+    margin-right: auto;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: .4rem 4.5rem;
+    border-radius: 10px;
+    margin: .7rem 0;
+    font-size: small;
+}
+
+.reaction {
+    background-color: var(--reaction-bg);
+}
+
+.memory {
+    background-color: var(--memory-bg);
+}
+
+.verbal {
+    background-color: var(--verbal-bg);
+}
+
+.visual {
+    background-color: var(--visual-bg);
+}
+
+.cta-btn {
+    background: var(--cta-btn);
+    padding: .7rem 4rem;
+    border-radius: 4rem;
+    margin-bottom: .1rem;
+}
+
+.cta-btn a {
+    color: var(--card-1-alt);
+    text-decoration: none;
 }
 
