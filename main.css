@@ -56,6 +56,37 @@ body {
     padding: 0 2rem;
 }
 
+@media (max-width: 980px) {
+    body {
+        height: 100dvh;
+        width: 100dvw;
+    }
+
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .flex-container{
+        width: 100%;
+    }
+
+    .card-1 {
+        height: 45%;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .card-2 {
+        height: 55%;
+        background-color: var(--white);
+        border-radius: 0 20px 20px 0;
+        padding: 2rem 2rem;
+    }
+
+}
+
 .card-1 .title {
     color: var(--card-1-alt);
     font-size: 1.5rem;
@@ -137,6 +168,16 @@ body {
     margin-top: .2rem;
 }
 
+@media (max-width: 980px) {
+    .summary {
+        gap: 2rem;
+    }
+
+    .item {
+        margin-top: .7rem;
+    }
+}
+
 .reaction {
     background-color: var(--reaction-bg);
     color: var(--reaction);
@@ -202,6 +243,12 @@ body {
     margin-top: auto;
 }
 
+@media (max-width: 980px) {
+    .cta-btn {
+        padding: 1rem 0;
+    }
+}
+
 .cta-btn a {
     color: var(--card-1-alt);
     text-decoration: none;
@@ -210,4 +257,3 @@ body {
 .cta-btn:active {
     background: linear-gradient(to bottom, var(--card-1-bg-1), var(--card-1-bg-2));
 }
-
